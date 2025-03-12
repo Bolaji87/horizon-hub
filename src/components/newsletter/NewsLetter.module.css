@@ -1,15 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"); */
 
 .newsLetter {
-  margin-top: 40px;
-  height: 60%;
+  height: 100vh;
   background-color: rgb(130, 133, 9);
   padding: 12px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 35px;
 }
 .newsLetter h1 {
   font-size: 52px;
