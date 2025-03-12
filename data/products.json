@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Men's Slim Fit T-Shirt",
+      "category": "Men",
+      "price": 19.99,
+      "image": "/images/mens-tshirt.jpg",
+      "description": "A comfortable slim-fit t-shirt for everyday wear.",
+      "sizes": ["S", "M", "L", "XL"],
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "name": "Men's Denim Jacket",
+      "category": "Men",
+      "price": 49.99,
+      "image": "/images/mens-denim-jacket.jpg",
+      "description": "Classic denim jacket with a stylish design.",
+      "sizes": ["M", "L", "XL"],
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "name": "Women's Floral Dress",
+      "category": "Women",
+      "price": 39.99,
+      "image": "/images/womens-floral-dress.jpg",
+      "description": "Elegant floral dress for casual and formal occasions.",
+      "sizes": ["S", "M", "L"],
+      "stock": 40
+    },
+    {
+      "id": 4,
+      "name": "Women's Leather Jacket",
+      "category": "Women",
+      "price": 79.99,
+      "image": "/images/womens-leather-jacket.jpg",
+      "description": "Stylish leather jacket for a bold look.",
+      "sizes": ["M", "L", "XL"],
+      "stock": 25
+    },
+    {
+      "id": 5,
+      "name": "Men's Running Shoes",
+      "category": "Accessories",
+      "price": 59.99,
+      "image": "/images/mens-running-shoes.jpg",
+      "description": "Comfortable running shoes with breathable material.",
+      "sizes": [40, 41, 42, 43, 44],
+      "stock": 35
+    },
+    {
+      "id": 6,
+      "name": "Unisex Hoodie",
+      "category": "Unisex",
+      "price": 34.99,
+      "image": "/images/unisex-hoodie.jpg",
+      "description": "Soft and cozy hoodie for all seasons.",
+      "sizes": ["S", "M", "L", "XL"],
+      "stock": 45
+    },
+    {
+      "id": 7,
+      "name": "Women's High Waist Jeans",
+      "category": "Women",
+      "price": 44.99,
+      "image": "/images/womens-jeans.jpg",
+      "description": "Trendy high waist jeans for a perfect fit.",
+      "sizes": ["S", "M", "L"],
+      "stock": 30
+    },
+    {
+      "id": 8,
+      "name": "Men's Cargo Pants",
+      "category": "Men",
+      "price": 39.99,
+      "image": "/images/mens-cargo-pants.jpg",
+      "description": "Durable cargo pants with multiple pockets.",
+      "sizes": ["M", "L", "XL"],
+      "stock": 40
+    },
+    {
+      "id": 9,
+      "name": "Men's Leather Wallet",
+      "category": "Accessories",
+      "price": 24.99,
+      "image": "/images/mens-wallet.jpg",
+      "description": "Premium quality leather wallet with multiple slots.",
+      "sizes": [],
+      "stock": 60
+    },
+    {
+      "id": 10,
+      "name": "Women's Handbag",
+      "category": "Accessories",
+      "price": 49.99,
+      "image": "/images/womens-handbag.jpg",
+      "description": "Elegant handbag with spacious compartments.",
+      "sizes": [],
+      "stock": 20
+    },
+    {
+      "id": 11,
+      "name": "Men's Formal Suit",
+      "category": "Men",
+      "price": 129.99,
+      "image": "/images/mens-suit.jpg",
+      "description": "Premium quality formal suit for business and events.",
+      "sizes": ["M", "L", "XL"],
+      "stock": 15
+    },
+    {
+      "id": 12,
+      "name": "Women's Sunglasses",
+      "category": "Accessories",
+      "price": 29.99,
+      "image": "/images/womens-sunglasses.jpg",
+      "description": "Stylish sunglasses for UV protection.",
+      "sizes": [],
+      "stock": 50
+    },
+    {
+      "id": 13,
+      "name": "Unisex Sports Cap",
+      "category": "Accessories",
+      "price": 14.99,
+      "image": "/images/sports-cap.jpg",
+      "description": "Breathable and adjustable sports cap.",
+      "sizes": [],
+      "stock": 70
+    },
+    {
+      "id": 14,
+      "name": "Women's Sneakers",
+      "category": "Women",
+      "price": 54.99,
+      "image": "/images/womens-sneakers.jpg",
+      "description": "Comfortable sneakers for casual wear.",
+      "sizes": [36, 37, 38, 39, 40],
+      "stock": 40
+    },
+    {
+      "id": 15,
+      "name": "Men's Beanie Hat",
+      "category": "Accessories",
+      "price": 19.99,
+      "image": "/images/mens-beanie.jpg",
+      "description": "Warm and stylish beanie for winter.",
+      "sizes": [],
+      "stock": 30
+    },
+    {
+      "id": 16,
+      "name": "Men's Polo Shirt",
+      "category": "Men",
+      "price": 24.99,
+      "image": "/images/mens-polo.jpg",
+      "description": "Classic polo shirt with premium fabric.",
+      "sizes": ["S", "M", "L", "XL"],
+      "stock": 40
+    },
+    {
+      "id": 17,
+      "name": "Women's Leggings",
+      "category": "Women",
+      "price": 29.99,
+      "image": "/images/womens-leggings.jpg",
+      "description": "Stretchable leggings for yoga and workouts.",
+      "sizes": ["S", "M", "L"],
+      "stock": 50
+    },
+    {
+      "id": 18,
+      "name": "Men's Sports Watch",
+      "category": "Accessories",
+      "price": 69.99,
+      "image": "/images/mens-watch.jpg",
+      "description": "Durable and waterproof sports watch.",
+      "sizes": [],
+      "stock": 25
+    },
+    {
+      "id": 19,
+      "name": "Women's Winter Coat",
+      "category": "Women",
+      "price": 99.99,
+      "image": "/images/womens-coat.jpg",
+      "description": "Warm winter coat with stylish design.",
+      "sizes": ["M", "L", "XL"],
+      "stock": 20
+    },
+    {
+      "id": 20,
+      "name": "Unisex Joggers",
+      "category": "Unisex",
+      "price": 34.99,
+      "image": "/images/unisex-joggers.jpg",
+      "description": "Comfortable joggers for casual and sportswear.",
+      "sizes": ["S", "M", "L", "XL"],
+      "stock": 35
+    }
+  ]
+}
