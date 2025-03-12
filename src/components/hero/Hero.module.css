@@ -4,12 +4,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 80vh;
+  min-height: 100vh;
 }
 .notes {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #9c1f1f;
 }
 .notes h1 {
   font-size: 28px;
@@ -20,6 +21,7 @@
   font-style: italic;
   line-height: 1.5;
   margin-bottom: 25px;
+  color: #1e1e1e;
 }
 .media {
   padding-top: 30px;
