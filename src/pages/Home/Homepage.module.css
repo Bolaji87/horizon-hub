@@ -1,5 +1,5 @@
 .homePage {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  /* height: 100vh; */
+
+  /* scroll-behavior: smooth; */
 }
