@@ -10,11 +10,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #9c1f1f;
 }
 .notes h1 {
   font-size: 28px;
   line-height: 2.6;
+  color: rgb(131, 113, 9);
 }
 .notes p {
   font-size: 22px;
@@ -22,6 +22,7 @@
   line-height: 1.5;
   margin-bottom: 25px;
   color: #1e1e1e;
+  color: #6859069a;
 }
 .media {
   padding-top: 30px;
@@ -29,6 +30,7 @@
   grid-template-columns: 1fr 1fr;
   list-style: none;
   gap: 25px;
+  height: 300px;
 }
 
 .heroImage {

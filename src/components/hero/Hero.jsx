@@ -40,8 +40,10 @@ function WelcomeNotes() {
     <section className={styles.notes}>
       <h1>Welcome to Horizon Hub</h1>
       <p>
-        Experience the perfect blend of beauty, elegance, <br /> and comfort
-        with our exquisite Abayas and Jalabs.
+        Experience the perfect blend of <strong>beauty</strong>,{" "}
+        <strong>elegance,</strong>
+        <br /> and <strong>comfort</strong> with our exquisite Abayas and
+        Jalabs.
       </p>
       <Button className={styles.btn}>Shop Now</Button>
     </section>
