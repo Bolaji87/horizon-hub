@@ -1,28 +1,32 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import styles from "./Navbar.module.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <header className={styles.navbar}>
-      <h2>Horizon hub</h2>
-
+      <h2 role="button" onClick={() => navigate("/")}>
+        Horizon Hub
+      </h2>
       <nav className={styles.listCont}>
         <ul>
           <li className={styles.listItem}>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="">Products</a>
+            <Link to="/products">Products</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="">cart</a>
+            <Link to="/cart">Cart</Link>
           </li>
           <li className={`${styles.listItem} ${styles.login}`}>
-            <a href="">Login</a>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>

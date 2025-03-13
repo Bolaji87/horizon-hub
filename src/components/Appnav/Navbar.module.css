@@ -10,6 +10,7 @@
 }
 .navbar h2 {
   color: #6859069a;
+  cursor: pointer;
 }
 .listCont ul {
   display: flex;
