@@ -1,2 +1,16 @@
 .products {
+  display: flex;
+  justify-content: center; /* Center the grid horizontally */
+  padding: 40px 0; /* Controls the spacing on top and bottom */
+}
+
+.products ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between cards */
+  width: 80%; /* Controls the left and right spacing */
+  max-width: 1200px; /* Prevents excessive stretching on large screens */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
 }

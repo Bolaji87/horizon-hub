@@ -1,0 +1,20 @@
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card p {
+  margin-bottom: 10px;
+}
+.card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.productImg {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
