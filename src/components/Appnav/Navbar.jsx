@@ -2,9 +2,12 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import styles from "./Navbar.module.css";
+import { useCart } from "../../hooks/useCart";
+import { FaCartShopping } from "react-icons/fa6";
 
 function Navbar() {
   const navigate = useNavigate();
+  const { numOfItems } = useCart();
 
   return (
     <header className={styles.navbar}>
@@ -22,8 +25,14 @@ function Navbar() {
           <li className={styles.listItem}>
             <Link to="/products">Products</Link>
           </li>
-          <li className={styles.listItem}>
-            <Link to="/cart">Cart</Link>
+          <li className={`${styles.listItem} ${styles.cartItem}`}>
+            <span className={styles.numItems}>{numOfItems || ""}</span>
+            <Link to="/cart">
+              Cart
+              <span className={styles.cartLogo}>
+                <FaCartShopping />
+              </span>
+            </Link>
           </li>
           <li className={`${styles.listItem} ${styles.login}`}>
             <Link to="/login">Login</Link>
