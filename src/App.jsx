@@ -5,6 +5,8 @@ import { lazy } from "react";
 import Navbar from "./components/Appnav/Navbar";
 import Footer from "./components/footer/Footer";
 import Spinner from "./UI/Spinner";
+import { CartProvider } from "./contexts/CartContext";
+
 const Homepage = lazy(() => import("./pages/Home/Homepage"));
 const Products = lazy(() => import("./pages/products/Products"));
 const Cart = lazy(() => import("./pages/cart/Cart"));
@@ -13,7 +15,7 @@ const PageNotFound = lazy(() => import("./pages/notfound/PageNotFound"));
 
 function App() {
   return (
-    <div>
+    <CartProvider>
       <Suspense fallback={<Spinner />}>
         <BrowserRouter>
           <Navbar />
@@ -27,7 +29,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </Suspense>
-    </div>
+    </CartProvider>
   );
 }
 
