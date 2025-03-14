@@ -7,6 +7,9 @@ import Footer from "./components/footer/Footer";
 import Spinner from "./UI/Spinner";
 const Homepage = lazy(() => import("./pages/Home/Homepage"));
 const Products = lazy(() => import("./pages/products/Products"));
+const Cart = lazy(() => import("./pages/cart/Cart"));
+const AboutUs = lazy(() => import("./pages/about/AboutUs"));
+const PageNotFound = lazy(() => import("./pages/notfound/PageNotFound"));
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="products" element={<Products />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="about" element={<AboutUs />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
         </BrowserRouter>
