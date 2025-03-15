@@ -8,7 +8,7 @@ function ProductCard({ product }) {
 
   return (
     <li className={styles.card}>
-      <p>{title}</p>
+      <p className={styles.title}>{title}</p>
       <img className={styles.productImg} src={image} alt={title} />
       <p>${price.toFixed(2)}</p>
       <button onClick={() => onAddToCart(product)}>Add to cart</button>
