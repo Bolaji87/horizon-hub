@@ -3,7 +3,8 @@ import styles from "./Cart.module.css";
 import { useCart } from "../../hooks/useCart";
 
 function Cart() {
-  const { cartItems, totalAmount, onDeleteCartItem } = useCart();
+  const { cartItems, totalAmount, onDeleteCartItem, onClearCartItems } =
+    useCart();
 
   return (
     <div className={styles.cart}>
@@ -29,7 +30,9 @@ function Cart() {
           </ul>
           <h2>Total: ${totalAmount.toFixed(2)}</h2>
           <div>
-            <button className={styles.clearCart}>Clear Cart 🗑️</button>
+            <button className={styles.clearCart} onClick={onClearCartItems}>
+              Clear Cart 🗑️
+            </button>
           </div>
         </>
       ) : (
