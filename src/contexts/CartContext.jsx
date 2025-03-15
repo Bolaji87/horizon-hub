@@ -69,7 +69,8 @@ function reducer(state, action) {
         ),
       };
     }
-
+    case "clear/cartItems":
+      return initialState;
     default:
       throw new Error("Unknown action type");
   }
@@ -87,9 +88,9 @@ function CartProvider({ children }) {
   function handleDeleteCart(id) {
     dispatch({ type: "delete/cart", payload: id });
   }
-  // function handleClearCartItems() {
-  //   dispatch({ type: "clear/cartItems" });
-  // }
+  function handleClearCartItems() {
+    dispatch({ type: "clear/cartItems" });
+  }
   return (
     <CartContext.Provider
       value={{
@@ -98,7 +99,7 @@ function CartProvider({ children }) {
         totalAmount,
         onAddToCart: handleAddToCartItems,
         onDeleteCartItem: handleDeleteCart,
-        // onClearCartItems: handleClearCartItems,
+        onClearCartItems: handleClearCartItems,
       }}
     >
       {children}
