@@ -10,10 +10,8 @@ function ProductCard({ product }) {
     <li className={styles.card}>
       <p>{title}</p>
       <img className={styles.productImg} src={image} alt={title} />
-      <p>{price}</p>
-      <button onClick={() => onAddToCart({ title, price, image, id })}>
-        Add to cart
-      </button>
+      <p>${price.toFixed(2)}</p>
+      <button onClick={() => onAddToCart(product)}>Add to cart</button>
     </li>
   );
 }
