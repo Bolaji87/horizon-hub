@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../UI/Button";
 import styles from "./Hero.module.css";
+import { useNavigate } from "react-router-dom";
 
 const imageData = [
   {
@@ -36,6 +37,7 @@ function Hero() {
 }
 
 function WelcomeNotes() {
+  const navigate = useNavigate();
   return (
     <section className={styles.notes}>
       <h1>Welcome to Horizon Hub</h1>
@@ -45,7 +47,9 @@ function WelcomeNotes() {
         <br /> and <strong>comfort</strong> with our exquisite Abayas and
         Jalabs.
       </p>
-      <Button className={styles.btn}>Shop Now</Button>
+      <Button className={styles.btn} onclick={() => navigate("/products")}>
+        Shop Now
+      </Button>
     </section>
   );
 }
