@@ -59,4 +59,21 @@
   -o-border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  margin: 20px 0;
+  background-color: rgb(134, 125, 74);
+  color: #fff;
+  padding: 15px;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
