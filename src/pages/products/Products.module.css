@@ -14,3 +14,21 @@
   padding: 0;
   margin: 0 auto;
 }
+.category {
+  display: flex;
+  background-color: #ddd;
+  padding: 15px;
+  padding-left: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.all,
+.men,
+.women {
+  font-size: 0.1.2em;
+  font-weight: 600;
+  color: rgb(138, 72, 204);
+  cursor: pointer;
+}
