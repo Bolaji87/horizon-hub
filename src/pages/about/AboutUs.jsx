@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import NewsLetter from "../../components/newsletter/NewsLetter";
 import styles from "./AboutUs.module.css";
-import placeholderImage from "../../assets/dami.jpg"; // Replace with your brand image
+import placeholderImage from "../../assets/about-image.jpg"; // Replace with your brand image
 
 const About = () => {
   const navigate = useNavigate();
