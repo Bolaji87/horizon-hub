@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Login.module.css";
+import { useAuth } from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+function Login() {
+  const [email, setEmail] = useState("example@gmail.com");
+  const [password, setPassword] = useState("129BWop67");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const { login, isAuthenticated } = useAuth();
+  const navigate = useNavigate();
+
+  async function handleSubmit(e) {
     e.preventDefault();
     setError("");
 
@@ -15,9 +20,21 @@ const Login = () => {
       return;
     }
 
-    // Simulate login logic (Replace with actual authentication)
+    try {
+      if (email && password) await login(email, password);
+    } catch {
+      setError("Invalid email or password");
+    }
+
     console.log("Logging in with", { email, password });
-  };
+  }
+
+  useEffect(
+    function () {
+      if (isAuthenticated) navigate("/");
+    },
+    [isAuthenticated, navigate]
+  );
 
   return (
     <div className={styles.container}>
@@ -54,6 +71,6 @@ const Login = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Login;
