@@ -1,0 +1,40 @@
+.user {
+  /* position: absolute; */
+  /* top: 4.2rem;
+  z-index: 999;
+  right: 4.2rem; */
+  /* background-color: var(--color-dark--1); */
+  padding: 0.4rem 0.8rem;
+  border-radius: 7px;
+  box-shadow: 0 0.8rem 2.4rem rgba(36, 42, 46, 0.5);
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.user img {
+  border-radius: 100px;
+  height: 2rem;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.user button {
+  background-color: var(--color-dark--2);
+  border-radius: 7px;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  background-color: #837d7d;
+  color: green;
+  font-family: inherit;
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: fit-content;
+}
