@@ -6,16 +6,16 @@ import { useNavigate } from "react-router-dom";
 function Checkout() {
   const navigate = useNavigate();
   const { isAuthenticated } = useAuth();
-  useEffect(
-    function () {
-      if (isAuthenticated) {
-        navigate("/checkout");
-      } else {
-        navigate("/login");
-      }
-    },
-    [isAuthenticated, navigate]
-  );
+  // useEffect(
+  //   function () {
+  //     if (isAuthenticated) {
+  //       navigate("/checkout");
+  //     } else {
+  //       navigate("/login");
+  //     }
+  //   },
+  //   [isAuthenticated, navigate]
+  // );
   return <div>Checkout</div>;
 }
 
