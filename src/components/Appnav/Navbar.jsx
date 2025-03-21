@@ -2,11 +2,14 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import styles from "./Navbar.module.css";
+import User from "../user/User";
 import { useCart } from "../../hooks/useCart";
 import { FaCartShopping } from "react-icons/fa6";
+import { useAuth } from "../../hooks/useAuth";
 
 function Navbar() {
   const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
   const { numOfItems } = useCart();
 
   return (
@@ -35,7 +38,7 @@ function Navbar() {
             </Link>
           </li>
           <li className={`${styles.listItem} ${styles.login}`}>
-            <Link to="/login">Login</Link>
+            {isAuthenticated ? <User /> : <Link to="/login">Login</Link>}
           </li>
         </ul>
       </nav>
