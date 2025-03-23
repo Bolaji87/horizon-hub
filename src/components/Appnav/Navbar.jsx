@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaCartShopping } from "react-icons/fa6";
 
 import styles from "./Navbar.module.css";
 import User from "../user/User";
+import Button from "../../UI/Button";
 import { useCart } from "../../hooks/useCart";
-import { FaCartShopping } from "react-icons/fa6";
 import { useAuth } from "../../hooks/useAuth";
 
 function Navbar() {
@@ -37,8 +38,14 @@ function Navbar() {
               </span>
             </Link>
           </li>
-          <li className={`${styles.listItem} ${styles.login}`}>
-            {isAuthenticated ? <User /> : <Link to="/login">Login</Link>}
+          <li className={`${styles.listItem} `}>
+            {isAuthenticated ? (
+              <User />
+            ) : (
+              <Link to="/login">
+                <Button className={styles.login}>Login</Button>
+              </Link>
+            )}
           </li>
         </ul>
       </nav>
