@@ -1,9 +1,4 @@
 .user {
-  /* position: absolute; */
-  /* top: 4.2rem;
-  z-index: 999;
-  right: 4.2rem; */
-  /* background-color: var(--color-dark--1); */
   padding: 0.4rem 0.8rem;
   border-radius: 7px;
   box-shadow: 0 0.8rem 2.4rem rgba(36, 42, 46, 0.5);
@@ -29,8 +24,9 @@
   border-radius: 7px;
   border: none;
   padding: 0.4rem 0.8rem;
-  background-color: #837d7d;
-  color: green;
+  background-color: rgb(131, 113, 9);
+  color: #ffffff;
+
   font-family: inherit;
   font-size: 0.6rem;
   font-weight: 800;
