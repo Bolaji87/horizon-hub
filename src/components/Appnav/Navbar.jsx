@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";
 
-import styles from "./Navbar.module.css";
+// import styles from "./Navbar.module.css";
 import User from "../user/User";
 import Button from "../../UI/Button";
 import { useCart } from "../../hooks/useCart";
@@ -14,36 +14,34 @@ function Navbar() {
   const { numOfItems } = useCart();
 
   return (
-    <header className={styles.navbar}>
-      <h2 role="button" onClick={() => navigate("/")}>
+    <header className="shadow-black/12 sticky top-0 flex items-center justify-between bg-white px-8 py-3 font-semibold text-stone-700 shadow-lg">
+      <h2 className="text-2xl" role="button" onClick={() => navigate("/")}>
         Horizon Hub
       </h2>
-      <nav className={styles.listCont}>
-        <ul>
-          <li className={styles.listItem}>
+      <nav>
+        <ul className="flex items-center gap-x-6">
+          <li>
             <Link to="/">Home</Link>
           </li>
-          <li className={styles.listItem}>
+          <li>
             <Link to="/about">About</Link>
           </li>
-          <li className={styles.listItem}>
+          <li>
             <Link to="/products">Products</Link>
           </li>
-          <li className={`${styles.listItem} ${styles.cartItem}`}>
-            <span className={styles.numItems}>{numOfItems || ""}</span>
+          <li>
+            <span>{numOfItems || ""}</span>
             <Link to="/cart">
               Cart
-              <span className={styles.cartLogo}>
-                <FaCartShopping />
-              </span>
+              <span>{/* <FaCartShopping /> */}</span>
             </Link>
           </li>
-          <li className={`${styles.listItem} `}>
+          <li>
             {isAuthenticated ? (
               <User />
             ) : (
               <Link to="/login">
-                <Button className={styles.login}>Login</Button>
+                <Button>Login</Button>
               </Link>
             )}
           </li>
