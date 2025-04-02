@@ -29,7 +29,7 @@ const imageData = [
 
 function Hero() {
   return (
-    <article className="flex min-h-screen w-full justify-between px-8 py-3">
+    <article className="mt-[45px] flex min-h-screen w-full justify-between px-8 py-3">
       <WelcomeNotes />
       <WelcomeMedia imageData={imageData} />
     </article>
@@ -50,7 +50,10 @@ function WelcomeNotes() {
         <br /> and <strong>comfort</strong> with our exquisite Abayas and
         Jalabs.
       </p>
-      <Button className={styles.btn} onclick={() => navigate("/products")}>
+      <Button
+        className="my-5 w-[200px] cursor-pointer rounded-md border-none bg-amber-600 p-4 text-xl font-bold text-white hover:bg-amber-700"
+        onclick={() => navigate("/products")}
+      >
         Shop Now
       </Button>
     </section>
@@ -63,7 +66,7 @@ function WelcomeMedia({ imageData }) {
       {imageData.map((data) => (
         <li key={data.id}>
           <img
-            className="h-[180px] w-[250px] rounded-md bg-white object-cover"
+            className="h-[180px] w-[250px] rounded-md bg-white object-cover shadow-[12px_10px_4px_4px_rgba(0,0,0,0.2)]"
             src={data.image}
             alt={data.name}
           />
