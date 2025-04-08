@@ -1,13 +1,16 @@
 import React from "react";
-import Hero from "../../components/hero/Hero";
-import NewsLetter from "../../components/newsletter/NewsLetter";
-import styles from "./Homepage.module.css";
+import Navbar from "../../components/Appnav/Navbar";
+import Footer from "../../components/footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function Homepage() {
   return (
-    <div className={styles.homePage}>
-      <Hero />
-      <NewsLetter />
+    <div className="h-screen">
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }

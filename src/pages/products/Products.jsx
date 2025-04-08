@@ -11,6 +11,7 @@ import {
   fetchProducts,
   fetchProductsCategory,
 } from "../../utils";
+import Navbar from "../../components/Appnav/Navbar";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -69,40 +70,43 @@ function Products() {
   }
 
   return (
-    <div className={styles.productsCont}>
-      <div className={styles.category}>
-        <div className={styles.all} onClick={() => handleFilterProducts()}>
-          All
+    <>
+      <Navbar />
+      <div className={styles.productsCont}>
+        <div className={styles.category}>
+          <div className={styles.all} onClick={() => handleFilterProducts()}>
+            All
+          </div>
+          <div
+            className={styles.women}
+            onClick={() => handleFilterProducts(ALLOWED_CATEGORIES.WOMEN)}
+          >
+            Abayas
+          </div>
+          <div
+            className={styles.men}
+            onClick={() => handleFilterProducts(ALLOWED_CATEGORIES.MEN)}
+          >
+            Jalabs
+          </div>
         </div>
-        <div
-          className={styles.women}
-          onClick={() => handleFilterProducts(ALLOWED_CATEGORIES.WOMEN)}
-        >
-          Abayas
-        </div>
-        <div
-          className={styles.men}
-          onClick={() => handleFilterProducts(ALLOWED_CATEGORIES.MEN)}
-        >
-          Jalabs
+        <div className={styles.products}>
+          {isLoading && <Spinner />}
+          {error && <Error errorMessage={error} />}
+          {!isLoading && !error && products.length > 0 && (
+            <ul>
+              {products.map(
+                (product) =>
+                  product.category !== "jewelery" &&
+                  product.category !== "electronics" && (
+                    <ProductCard key={product.id} product={product} />
+                  ),
+              )}
+            </ul>
+          )}
         </div>
       </div>
-      <div className={styles.products}>
-        {isLoading && <Spinner />}
-        {error && <Error errorMessage={error} />}
-        {!isLoading && !error && products.length > 0 && (
-          <ul>
-            {products.map(
-              (product) =>
-                product.category !== "jewelery" &&
-                product.category !== "electronics" && (
-                  <ProductCard key={product.id} product={product} />
-                ),
-            )}
-          </ul>
-        )}
-      </div>
-    </div>
+    </>
   );
 }
 

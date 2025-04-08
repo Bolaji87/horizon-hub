@@ -10,7 +10,7 @@
 .footerWrapper {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  /* gap: 36px; */
   padding: 60px 0;
   padding-bottom: 50px;
   align-items: center;

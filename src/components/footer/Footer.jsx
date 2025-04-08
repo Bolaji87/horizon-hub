@@ -7,7 +7,7 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.footerContainer}>
+    <footer className="relative mb-24">
       <div className={styles.footerWrapper}>
         <h1>Horizon Hub</h1>
         <ul>

@@ -14,8 +14,12 @@ function Navbar() {
   const { numOfItems } = useCart();
 
   return (
-    <header className="shadow-black/12 flex items-center justify-between bg-white px-8 py-3 font-semibold text-stone-700 shadow-lg">
-      <h2 className="text-2xl" role="button" onClick={() => navigate("/")}>
+    <header className="shadow-black/12 flex items-center justify-between bg-pink-300 px-6 py-3 font-semibold text-purple-900 shadow-lg">
+      <h2
+        className="text-3xl font-normal"
+        role="button"
+        onClick={() => navigate("/")}
+      >
         Horizon Hub
       </h2>
       <nav>
@@ -40,9 +44,9 @@ function Navbar() {
             {isAuthenticated ? (
               <User />
             ) : (
-              <Link to="/login">
-                <Button>Login</Button>
-              </Link>
+              <Button type="cto" to="/login">
+                Login
+              </Button>
             )}
           </li>
         </ul>

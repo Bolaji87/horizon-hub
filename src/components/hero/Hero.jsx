@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../UI/Button";
-import styles from "./Hero.module.css";
+
 import { useNavigate } from "react-router-dom";
 
 const imageData = [
@@ -29,7 +29,7 @@ const imageData = [
 
 function Hero() {
   return (
-    <article className="mt-[45px] flex min-h-screen w-full justify-between px-8 py-3">
+    <article className="flex min-h-[500px] w-full justify-between px-8 py-3">
       <WelcomeNotes />
       <WelcomeMedia imageData={imageData} />
     </article>
@@ -39,7 +39,8 @@ function Hero() {
 function WelcomeNotes() {
   const navigate = useNavigate();
   return (
-    <section className="flex flex-col justify-center">
+    // <section className="mt-40 flex flex-col justify-stretch gap-10">
+    <section className="mt-25 flex flex-col items-center justify-center">
       <h1 className="text-2xl font-bold text-amber-500">
         Welcome to Horizon Hub
       </h1>
@@ -50,10 +51,7 @@ function WelcomeNotes() {
         <br /> and <strong>comfort</strong> with our exquisite Abayas and
         Jalabs.
       </p>
-      <Button
-        className="my-5 w-[200px] cursor-pointer rounded-md border-none bg-amber-600 p-4 text-xl font-bold text-white hover:bg-amber-700"
-        onclick={() => navigate("/products")}
-      >
+      <Button type="primary" onClick={() => navigate("/products")}>
         Shop Now
       </Button>
     </section>
