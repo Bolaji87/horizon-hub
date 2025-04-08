@@ -11,3 +11,8 @@ export async function fetchProductsCategory(category) {
   const data = await res.json();
   return data;
 }
+
+export const ALLOWED_CATEGORIES = {
+  MEN: "men's clothing",
+  WOMEN: "women's clothing",
+};
