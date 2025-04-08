@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 import styles from "./Products.module.css";
 import Spinner from "../../UI/Spinner";
 import ProductCard from "../../components/productcard/ProductCard";
 import Error from "../../UI/Error";
-import { fetchProducts, fetchProductsCategory } from "../../utils";
-import { useParams } from "react-router-dom";
 
-const BASE_URL = `https://fakestoreapi.com`;
+import {
+  ALLOWED_CATEGORIES,
+  fetchProducts,
+  fetchProductsCategory,
+} from "../../utils";
 
 function Products() {
   const [products, setProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
   const { category } = useParams();
 
   useEffect(
@@ -52,21 +57,17 @@ function Products() {
         getProductsCategory();
       }
     },
-    [category]
+    [category],
   );
 
   function handleFilterProducts(productCategory = null) {
     const filteredProducts = allProducts.filter(
-      (product) => product.category === productCategory
+      (product) => product.category === productCategory,
     );
 
     setProducts(productCategory ? filteredProducts : allProducts);
   }
 
-  const ALLOWED_CATEGORIES = {
-    MEN: "men's clothing",
-    WOMEN: "women's clothing",
-  };
   return (
     <div className={styles.productsCont}>
       <div className={styles.category}>
@@ -96,7 +97,7 @@ function Products() {
                 product.category !== "jewelery" &&
                 product.category !== "electronics" && (
                   <ProductCard key={product.id} product={product} />
-                )
+                ),
             )}
           </ul>
         )}
