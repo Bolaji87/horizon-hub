@@ -17,7 +17,7 @@ function Category({ onCategory }) {
         <li key={key}>
           <Link
             to={item.to}
-            className="rounded-xl px-5 py-2 transition duration-300 ease-linear hover:bg-gray-100"
+            className="rounded-xl px-6 py-2.5 transition duration-300 ease-linear hover:bg-gray-100"
           >
             {item.text}
           </Link>

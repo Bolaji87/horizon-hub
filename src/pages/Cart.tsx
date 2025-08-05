@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./Cart.module.css";
-import { useCart } from "../../hooks/useCart";
+import { useCart } from "../hooks/useCart";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "../hooks/useAuth";
 
 function Cart() {
   const navigate = useNavigate();
