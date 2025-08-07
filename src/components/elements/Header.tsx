@@ -11,10 +11,10 @@ function Header() {
     <>
       <header className="w-full border-b bg-white shadow-sm">
         <Container className="flex items-center justify-between gap-3">
-          <div className="flex items-center justify-start text-3xl md:hidden">
-            <HamburgerIcon />
+          <div className="flex justify-start gap-3 text-3xl">
+            <Logo />
+            <HamburgerIcon className="md:hidden" />
           </div>
-          <Logo />
           <HeaderSearchInput className="hidden sm:block" />
 
           <ul className="hidden w-full max-w-max items-center justify-end gap-3 px-6 py-3 md:flex">

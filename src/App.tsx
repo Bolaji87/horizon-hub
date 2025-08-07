@@ -7,7 +7,6 @@ import AppLayout from "./components/ui/AppLayout";
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<Hero />} />
