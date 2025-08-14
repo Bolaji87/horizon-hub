@@ -1,12 +1,18 @@
-"use client";
-import { HiOutlineBars3 } from "react-icons/hi2";
+// HamburgerIcon.tsx
 import { HamburgerIconProps } from "@/app/_lib/types";
 
 function HamburgerIcon({ className }: HamburgerIconProps) {
   return (
-    <button className="text-2xl text-gray-700">
-      <HiOutlineBars3 className={`text-3xl ${className}`} />
-    </button>
+    <svg
+      viewBox="0 0 24 24"
+      className={`h-8 w-auto ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+    >
+      <rect x="3" y="6" width="18" height="2" rx="1" />
+      <rect x="3" y="11" width="18" height="2" rx="1" />
+      <rect x="3" y="16" width="18" height="2" rx="1" />
+    </svg>
   );
 }
 

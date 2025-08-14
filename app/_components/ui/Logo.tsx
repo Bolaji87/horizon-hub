@@ -1,15 +1,12 @@
-interface LogoProps {
-  className?: string;
-}
+import React from "react";
+import LogoIcon from "./LogoIcon";
+import HamburgerIcon from "./HamburgerIcon";
 
-function Logo({ className = "" }: LogoProps) {
+function Logo() {
   return (
-    <div className={`h-auto w-full max-w-10 md:w-12 lg:w-14 ${className}`}>
-      <img
-        src="/logo.png"
-        alt="Brand logo"
-        className="h-full w-full max-w-max rounded-full object-cover"
-      />
+    <div className="flex w-40 items-center gap-2">
+      <LogoIcon className="hidden md:block" />
+      <HamburgerIcon className="md:hidden" />
     </div>
   );
 }

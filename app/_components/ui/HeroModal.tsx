@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function HeroModal() {
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col items-start gap-4">
         <div className="flex place-items-center gap-3 text-sm font-semibold uppercase">
           <div className="rounded-full bg-black p-2 font-bold text-pink-50 shadow-2xl">
@@ -38,7 +38,7 @@ function HeroModal() {
         <div className="rounded-full bg-black p-2 font-bold text-pink-50 shadow-2xl">
           <FaRegCalendarTimes />
         </div>
-        <Link href="">Today&poas;s best deals</Link>
+        <Link href="">Today's best deals</Link>
       </div>
     </div>
   );

@@ -1,14 +1,15 @@
-import Hero from "@/app/_components/sections/Hero";
-import ImageCarousel from "@/app/_components/ui/ImageCarousel";
-import LatestArrival from "@/app/_components/sections/LatestArrival";
+// import Hero from "@/app/_components/sections/Hero";
+// import ImageCarousel from "@/app/_components/ui/ImageCarousel";
+// import LatestArrival from "@/app/_components/sections/LatestArrival";
 function Page() {
   return (
     <div>
-      <Hero />
-      <div className="mt-8 w-screen bg-orange-500 p-6">
+      {/* <Hero /> */}
+      {/* <Hero />
+      <div className="mt-8 bg-blue-400 py-4">
         <ImageCarousel />
       </div>
-      <LatestArrival />
+      <LatestArrival /> */}
     </div>
   );
 }
