@@ -1,4 +1,3 @@
-// HamburgerIcon.tsx
 import { HamburgerIconProps } from "@/app/_lib/types";
 
 function HamburgerIcon({ className }: HamburgerIconProps) {

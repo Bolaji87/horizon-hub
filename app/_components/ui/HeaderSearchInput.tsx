@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 interface HeaderInputProps {
   className?: string;

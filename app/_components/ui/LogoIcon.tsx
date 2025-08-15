@@ -1,4 +1,3 @@
-// LogoIcon.tsx
 interface LogoProps {
   className?: string;
 }
