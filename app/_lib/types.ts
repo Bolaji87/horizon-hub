@@ -13,3 +13,14 @@ export interface LastestArrivalsProps {
   price: string;
   id: string;
 }
+
+export interface SalesProductProps {
+  product: {
+    id: string;
+    name: string;
+    price: number;
+    prevPrice: number;
+    image: string;
+    rating: number;
+  };
+}

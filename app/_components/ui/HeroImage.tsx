@@ -5,6 +5,7 @@ function HeroImage() {
   return (
     <div className="h-full w-full pt-6">
       <Image
+        priority
         width={400}
         height={400}
         quality={100}

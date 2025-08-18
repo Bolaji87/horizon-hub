@@ -4,7 +4,7 @@ import { HiChevronRight } from "react-icons/hi2";
 
 function SideBar() {
   return (
-    <ul className="flex h-full flex-col gap-3 pt-3">
+    <ul className="flex h-full flex-col gap-3 pt-3 text-sm">
       <li className="flex items-center justify-between">
         <Link href="">Woman’s Fashion</Link>
         <span className="">

@@ -22,29 +22,6 @@ export const navBarItems = [
   },
 ];
 
-export const categoryItems = [
-  { text: "All categories ", to: "/" },
-  { text: "Clothing", to: "/" },
-  { text: "Watches", to: "/" },
-  { text: "Bags", to: "" },
-  { text: "Shoes", to: "/" },
-  { text: "Hairs", to: "/" },
-];
-
-// export const images = [
-//   "/images/about-image.png",
-//   "/images/drewmsuniseximg.png",
-
-//   "/images/horizon.png",
-//   "/images/discord.png",
-//   "/images/openai.png",
-//   "/images/paypal.png",
-//   "/images/slack.png",
-//   "/images/spotify.png",
-//   "/images/uber.png",
-//   "/images/youtube.png",
-// ];
-
 export const images = [
   "/images/about-image-1",
   "/images/drewmsuniseximg",
@@ -119,5 +96,40 @@ export const latestArrivalsProducts = [
     image: "/images/men-whitejalab.jpg",
     price: "12",
     id: crypto.randomUUID(),
+  },
+];
+
+export const salesProducts = [
+  {
+    id: crypto.randomUUID(),
+    name: "HAVIT HV-G92 Gamepad",
+    price: 120,
+    prevPrice: 160,
+    image: "/flashsales/product-1.png",
+    rating: 88,
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "AK-900 Wired Keyboard",
+    price: 960,
+    prevPrice: 1160,
+    image: "/flashsales/product-2.png",
+    rating: 75,
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "IPS LCD Gaming Monitor",
+    price: 370,
+    prevPrice: 400,
+    image: "/flashsales/product-3.png",
+    rating: 99,
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "S-Series Comfort Chair ",
+    price: 375,
+    prevPrice: 400,
+    image: "/flashsales/product-4.png",
+    rating: 99,
   },
 ];
