@@ -132,4 +132,47 @@ export const salesProducts = [
     image: "/flashsales/product-4.png",
     rating: 99,
   },
+  {
+    id: crypto.randomUUID(),
+    name: "S-Series Comfort Chair ",
+    price: 375,
+    prevPrice: 400,
+    image: "/flashsales/product-4.png",
+    rating: 99,
+  },
+];
+
+export const bestSellingProducts = [
+  {
+    id: crypto.randomUUID(),
+    name: "The north coat",
+    price: 260,
+    prevPrice: 360,
+    rating: 65,
+    image: "/best-selling/north-coat.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Gucci duffle bag",
+    price: 960,
+    prevPrice: 1160,
+    rating: 65,
+    image: "/best-selling/gucci-duffle-bag.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "RGB liquid CPU Cooler",
+    price: 160,
+    prevPrice: 170,
+    rating: 65,
+    image: "/best-selling/rgb-cpu-cooler.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Small BookSelf",
+    price: 260,
+    prevPrice: 0,
+    rating: 65,
+    image: "/best-selling/north-coat.png",
+  },
 ];

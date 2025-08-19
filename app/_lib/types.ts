@@ -24,3 +24,14 @@ export interface SalesProductProps {
     rating: number;
   };
 }
+
+export interface BestSellingProductProps {
+  product: {
+    id: string;
+    name: string;
+    price: number;
+    prevPrice: number;
+    rating: number;
+    image: string;
+  };
+}

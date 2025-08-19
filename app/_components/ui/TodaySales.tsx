@@ -23,7 +23,9 @@ function TodaySales() {
         </div>
         <SalesCountDown />
       </div>
-      <Arrow />
+      <div className="pr-24">
+        <Arrow />
+      </div>
     </div>
   );
 }

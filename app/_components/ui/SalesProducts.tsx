@@ -5,15 +5,16 @@ import SalesProduct from "./SalesProduct";
 function SalesProducts() {
   return (
     <div className="py-3">
-      <ul className="flex justify-between">
+      <ul className="flex gap-5">
         {salesProducts.map((product) => (
           <SalesProduct product={product} key={product.id} />
         ))}
       </ul>
-
-      <button className="mt-10 w-[230px] bg-[#DB4444] px-5 py-3 text-white">
-        View All Products
-      </button>
+      <div className="flex justify-center">
+        <button className="mt-10 w-[200px] rounded-sm bg-[#DB4444] px-5 py-2 text-white">
+          View All Products
+        </button>
+      </div>
     </div>
   );
 }
