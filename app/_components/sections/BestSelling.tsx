@@ -10,7 +10,7 @@ function BestSelling() {
       <div className="flex items-end justify-between">
         <div className="flex flex-col justify-end gap-4">
           <ThisMonthSvg />
-          <h1 className="text-2xl font-semibold">Best Selling Products</h1>
+          <h1 className="text-3xl font-semibold">Best Selling Products</h1>
         </div>
 
         <button className="w-[159px] rounded-sm bg-[#df4444] px-5 py-3 text-white">

@@ -1,3 +1,4 @@
+import { exploreProducts } from "./data";
 export interface categoryItemsProps {
   text: string;
   to: string;
@@ -31,6 +32,16 @@ export interface BestSellingProductProps {
     name: string;
     price: number;
     prevPrice: number;
+    rating: number;
+    image: string;
+  };
+}
+
+export interface exploreProductsProps {
+  product: {
+    id: string;
+    name: string;
+    price: number;
     rating: number;
     image: string;
   };

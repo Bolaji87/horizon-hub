@@ -176,3 +176,62 @@ export const bestSellingProducts = [
     image: "/best-selling/north-coat.png",
   },
 ];
+
+export const exploreProducts = [
+  {
+    id: crypto.randomUUID(),
+    name: "Breed Dry Dog Food",
+    price: 100,
+    rating: 35,
+    image: "/products/breed-dry-dog-food.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "CANON EOS DSLR Camera",
+    price: 360,
+    rating: 95,
+    image: "/products/canon-eos-camera.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "ASUS FHD Gaming Laptop",
+    price: 700,
+    rating: 325,
+    image: "/products/asus-fhd-gaming-laptop.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Curology Product Set ",
+    price: 500,
+    rating: 145,
+    image: "/products/curology-product-set.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Kids Electric Car",
+    price: 960,
+    rating: 65,
+    image: "/products/kids-electric-car.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Jr. Zoom Soccer Cleats",
+    price: 1160,
+    rating: 35,
+    image: "/products/zoom-soccer-cleats.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "GP11 Shooter USB Gamepad",
+    price: 600,
+    rating: 55,
+    image: "/products/gp11-shooter-usb-gamepad.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Quilted Satin Jacket",
+    price: 660,
+    rating: 55,
+    image: "/products/quilted-satin-jacket.png",
+  },
+];

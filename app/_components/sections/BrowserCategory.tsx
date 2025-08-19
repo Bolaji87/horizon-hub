@@ -10,7 +10,7 @@ function BrowserCategory() {
       <div className="flex items-end justify-between">
         <div className="flex flex-col gap-4">
           <CategorySvg />
-          <h1 className="text-2xl font-semibold">Browse By Category</h1>
+          <h1 className="text-3xl font-semibold">Browse By Category</h1>
         </div>
         <Arrow />
       </div>

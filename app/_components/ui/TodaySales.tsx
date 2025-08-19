@@ -19,7 +19,7 @@ function TodaySales() {
             </svg>
             <p className="text-[#DB4444]">Today’s</p>
           </div>
-          <h1 className="text-2xl font-semibold">Flash Sales</h1>
+          <h1 className="text-3xl font-semibold">Flash Sales</h1>
         </div>
         <SalesCountDown />
       </div>
